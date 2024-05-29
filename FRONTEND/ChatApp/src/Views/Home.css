@@ -1,0 +1,50 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+}
+
+.texxt {
+  color: #fff;
+  padding-top: 350px;
+  text-align: center;
+  animation: bounceIn 3s ease-in-out;
+}
+
+.heading {
+  color: #010b13;
+  padding: 75px;
+  text-align: center;
+  animation: drop 2s ease-in-out;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10vh);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-10vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
